@@ -1,0 +1,10 @@
+handle,title,sku,price,inventory_qty,product_type,vendor,tags,units_sold_l28,units_sold_l90,conversion_rate_l28,avg_rating,review_count
+til-gur-laddoo-12,Til Gur Laddoo box of 12,GG-TGL-12,449,210,Laddoo,Gur & Ghee,"hero,sesame,winter-classic",620,1980,3.4%,4.7,186
+dry-fruit-gur-laddoo-12,Dry Fruit Gur Laddoo box of 12,GG-DFL-12,649,140,Laddoo,Gur & Ghee,"premium,nuts,gifting",360,1120,2.1%,4.6,121
+gur-besan-laddoo-12,Gur Besan Laddoo box of 12,GG-GBL-12,499,160,Laddoo,Gur & Ghee,"classic,besan",300,930,1.6%,4.3,74
+peanut-gur-chikki-200g,Peanut Gur Chikki 200g,GG-PGC-200,249,380,Chikki,Gur & Ghee,"entry,peanut,long-shelf-life",470,1340,2.9%,4.5,98
+khajur-gur-bites-16,Khajur Gur Bites pack of 16,GG-KGB-16,549,120,Bites,Gur & Ghee,"kids,dates,tiffin",270,760,1.4%,4.4,52
+gur-makhana-150g,Gur Makhana 150g,GG-GMK-150,329,200,Snack,Gur & Ghee,"snack,makhana",220,610,2.2%,4.2,41
+til-gajak-250g,Til Gajak 250g,GG-TGJ-250,299,0,Seasonal,Gur & Ghee,"seasonal,nov-feb,sesame",0,0,,4.6,88
+festive-gift-box-24,Festive Gift Box 24 pieces,GG-FGB-24,1299,85,Gift box,Gur & Ghee,"gifting,assorted,handwritten-card",110,430,1.9%,4.8,63
+corporate-gift-box,Corporate Gift Box custom sleeve,GG-CGB-CUSTOM,899,0,Gift box,Gur & Ghee,"corporate,made-to-order,min-25",0,0,,,

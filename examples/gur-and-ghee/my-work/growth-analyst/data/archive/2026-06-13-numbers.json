@@ -1,0 +1,159 @@
+{
+  "as_of": "2026-06-13T09:10:00+05:30",
+  "brand": "Gur & Ghee",
+  "stage": "1-50Cr",
+  "founder_truth": {
+    "cac": 285,
+    "ltv": 1410,
+    "aov": 742,
+    "gross_margin": 0.418,
+    "channel_mix": {
+      "d2c": 0.55,
+      "corporate": 0.2,
+      "zomato_swiggy": 0.17,
+      "blinkit": 0.08
+    },
+    "repeat_purchase_rate": 0.29,
+    "source": "brand-brain/unit-economics.md",
+    "as_of": "2026-05-31"
+  },
+  "live": {
+    "revenue_7d": 555527,
+    "orders_7d": 712,
+    "new_customers_7d": 438,
+    "repeat_customers_7d": 274,
+    "aov": 744,
+    "cac_live": 346,
+    "roas_blended": 3.8,
+    "repeat_purchase_rate": null,
+    "total_ad_spend_7d": 68557,
+    "per_channel": [
+      {
+        "channel": "D2C site",
+        "revenue": 263421,
+        "orders": 354,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Zomato and Swiggy",
+        "revenue": 88750,
+        "orders": 217,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Blinkit",
+        "revenue": 42356,
+        "orders": 137,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Corporate",
+        "revenue": 161000,
+        "orders": 4,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Meta ads",
+        "revenue": null,
+        "orders": 151,
+        "spend": 62315,
+        "roas": null
+      },
+      {
+        "channel": "Google ads",
+        "revenue": null,
+        "orders": 31,
+        "spend": 6242,
+        "roas": null
+      }
+    ],
+    "trend_4w": [
+      {
+        "week_start": "2026-05-16",
+        "revenue": 547942,
+        "orders": 823,
+        "cac": 192,
+        "roas": 6.8
+      },
+      {
+        "week_start": "2026-05-23",
+        "revenue": 538155,
+        "orders": 755,
+        "cac": 228,
+        "roas": 5.8
+      },
+      {
+        "week_start": "2026-05-30",
+        "revenue": 489296,
+        "orders": 735,
+        "cac": 293,
+        "roas": 4.5
+      },
+      {
+        "week_start": "2026-06-06",
+        "revenue": 555527,
+        "orders": 712,
+        "cac": 346,
+        "roas": 3.8
+      }
+    ]
+  },
+  "alarm": {
+    "metric": "blended_cac",
+    "this_week": 346,
+    "prior_week": 293,
+    "delta_pct": 18.1,
+    "driver": "Two things at once. The khajur-tiffin campaign, live since 1 June, spent ₹17,144 this week for 21 customers, ₹816 each, against ₹342 to ₹356 on the other two. And new customers on the site fell from 216 to 198 because laddoos are paused in hot cities while ad spend went up.",
+    "recommended_action": "Pause khajur-tiffin today. Do not move its budget to the other campaigns until 1 July, when laddoos ship everywhere again. Relaunch Khajur Gur Bites with the tiffin angle once the new product page is live. Owner: founder, with the Ad Creative Lead's new angles."
+  },
+  "gaps": [
+    {
+      "metric": "blended_cac_vs_founder",
+      "founder_value": 285,
+      "live_value": 346,
+      "delta_pct": 21.4,
+      "above_20pct_threshold": true
+    },
+    {
+      "metric": "aov_vs_founder",
+      "founder_value": 742,
+      "live_value": 744,
+      "delta_pct": 0.3,
+      "above_20pct_threshold": false
+    }
+  ],
+  "missing": [
+    "live_store_connection",
+    "live_meta_ads_connection",
+    "live_google_ads_connection",
+    "repeat_rate_cohort"
+  ],
+  "running_on_sample_data": false,
+  "data_source_note": "Built from exported files in sample-inputs/, not a live connection. Ad revenue is not attributed in the exports, so ROAS is site revenue divided by total ad spend.",
+  "cross_teammate_inputs": [
+    {
+      "teammate": "voice-of-customer",
+      "file_path": "my-work/voice-of-customer/2026-06-13-voc-report.md",
+      "key_insight": "Khajur Gur Bites has the best rating in the range, 4.75. The product is not the problem."
+    },
+    {
+      "teammate": "performance-marketer",
+      "file_path": "my-work/performance-marketer/2026-06-13-winners-pattern.md",
+      "key_insight": "Both failed Khajur ads lead with a benefit word. Every winning ad names a person."
+    },
+    {
+      "teammate": "storefront-specialist",
+      "file_path": "my-work/storefront-specialist/2026-06-13-index.md",
+      "key_insight": "Khajur Gur Bites page rewritten in customers' words. Draft, not yet published."
+    },
+    {
+      "teammate": "ops-manager",
+      "file_path": "my-work/ops-manager/2026-06-13-index.md",
+      "key_insight": "Shipping pause is now a written rule. It ends 30 June."
+    }
+  ]
+}

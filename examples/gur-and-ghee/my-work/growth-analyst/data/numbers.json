@@ -1,0 +1,129 @@
+{
+  "as_of": "2026-10-10T08:30:00+05:30",
+  "brand": "Gur & Ghee",
+  "stage": "1-50Cr",
+  "founder_truth": {
+    "cac": 300,
+    "ltv": 1560,
+    "aov": 760,
+    "gross_margin": 0.418,
+    "channel_mix": {
+      "d2c": 0.48,
+      "corporate": 0.38,
+      "zomato_swiggy": 0.14
+    },
+    "repeat_purchase_rate": 0.33,
+    "source": "brand-brain/unit-economics.md",
+    "as_of": "2026-09-30"
+  },
+  "live": {
+    "revenue_7d": 2214000,
+    "orders_7d": 1188,
+    "new_customers_7d": 498,
+    "repeat_customers_7d": 690,
+    "aov": 765,
+    "cac_live": 291,
+    "roas_blended": 4.8,
+    "repeat_purchase_rate": 0.33,
+    "total_ad_spend_7d": 145000,
+    "per_channel": [
+      {
+        "channel": "D2C site",
+        "revenue": 692000,
+        "orders": 905,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Zomato and Swiggy",
+        "revenue": 104000,
+        "orders": 252,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Corporate",
+        "revenue": 1418000,
+        "orders": 31,
+        "spend": null,
+        "roas": null
+      },
+      {
+        "channel": "Meta ads",
+        "revenue": 571000,
+        "orders": 412,
+        "spend": 131000,
+        "roas": 4.4
+      },
+      {
+        "channel": "Google ads",
+        "revenue": 121000,
+        "orders": 86,
+        "spend": 14000,
+        "roas": 8.6
+      }
+    ],
+    "trend_4w": [
+      {
+        "week_start": "2026-09-14",
+        "revenue": 1210000,
+        "orders": 842,
+        "cac": 268,
+        "roas": 4.9
+      },
+      {
+        "week_start": "2026-09-21",
+        "revenue": 1460000,
+        "orders": 931,
+        "cac": 274,
+        "roas": 5.0
+      },
+      {
+        "week_start": "2026-09-28",
+        "revenue": 1790000,
+        "orders": 1064,
+        "cac": 283,
+        "roas": 4.9
+      },
+      {
+        "week_start": "2026-10-05",
+        "revenue": 2214000,
+        "orders": 1188,
+        "cac": 291,
+        "roas": 4.8
+      }
+    ]
+  },
+  "alarm": {
+    "metric": "diwali_kitchen_capacity_booked_pct",
+    "this_week": 71,
+    "prior_week": 52,
+    "delta_pct": 36.5,
+    "driver": "Corporate orders for delivery between 19 October and 6 November now take 71% of what the kitchen can make in those weeks, up from 52% seven days ago. 31 corporate orders were confirmed this week. At this rate the kitchen is full around 17 October, three weeks before Diwali.",
+    "recommended_action": "Announce a corporate order closing date of 16 October today, on the corporate page and to every open enquiry. Hold 20% of capacity for site customers, who pay on order and reorder through the year. Owner: founder."
+  },
+  "gaps": [
+    {
+      "metric": "blended_cac_vs_founder",
+      "founder_value": 300,
+      "live_value": 291,
+      "delta_pct": -3.0,
+      "above_20pct_threshold": false
+    }
+  ],
+  "missing": [],
+  "running_on_sample_data": false,
+  "data_source_note": "Live store and ad account connections. Kitchen capacity is from the founder's dispatch sheet in Drive.",
+  "cross_teammate_inputs": [
+    {
+      "teammate": "voice-of-customer",
+      "file_path": "my-work/voice-of-customer/2026-10-10-voc-report.md",
+      "key_insight": "Corporate buyers' top request is delivery to many addresses. Each one takes kitchen and dispatch time the capacity number does not yet count."
+    },
+    {
+      "teammate": "market-analyst",
+      "file_path": "my-work/market-analyst/2026-10-10-intel-report.md",
+      "key_insight": "Mithai Theory is running 20% off corporate orders placed before 15 October. You are filling up without a discount."
+    }
+  ]
+}
