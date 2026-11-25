@@ -156,6 +156,9 @@ If no, click the folder name under the prompt box and choose the folder from lin
 **The setup paste failed, or stopped halfway.**
 Do it by hand. Open [github.com/snehilkhanor/d2cinsider-ai-bootcamp](https://github.com/snehilkhanor/d2cinsider-ai-bootcamp), click the green **Code** button, then **Download ZIP**. Unzip it, rename the folder to `d2cinsider-ai-bootcamp`, and move the whole folder into your home folder. On Windows, if Extract All made a folder inside a folder, use the inner one, the one that directly contains `README.md`. Choose that folder under the prompt box, then paste: `Copy templates/brand-brain to brand-brain, keeping every file.`
 
+**Windows, and neither of those worked.**
+Last resort. Install **Git for Windows** from [git-scm.com/download/win](https://git-scm.com/download/win). It is a normal installer: accept every default, and you never open it afterwards. Quit the Claude app, open it again, and run the setup paste once more.
+
 **"Claude Code requires a paid plan".**
 The free plan will not work. Pro is enough for everything in Default scope.
 

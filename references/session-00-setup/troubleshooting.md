@@ -48,7 +48,9 @@ Then select it again in the app.
 Try a different browser. On Windows, right-click the ZIP and choose **Extract All**, do not just double-click it. Then rename the folder to `d2cinsider-ai-bootcamp` and move it into your home folder.
 
 ### Do I need Git on Windows?
-No. The setup paste downloads the folder without it, and this was tested on a Windows laptop with no Git installed. If a later session reports that a command could not run, tell a TA exactly what it said.
+Normally no. The setup paste downloads the folder without it, and this was tested on a Windows laptop with no Git installed.
+
+Keep it as a backup. If the setup paste fails and downloading the ZIP by hand fails too, or a later session reports that a command could not run, install **Git for Windows** from [git-scm.com/download/win](https://git-scm.com/download/win), accept every default, then quit and reopen the Claude app and try again.
 
 ---
 
