@@ -8,16 +8,74 @@ Each heading links to the session it came from, where the surrounding steps expl
 
 ## [Setup](session-00-setup.md)
 
+**Set up the bootcamp folder with one paste**
+
+```
+Set up the D2C Insider AI Bootcamp on this computer.
+
+1. Decide where it goes. If this chat is open in a folder of mine and that folder is empty, use that folder. Otherwise create a folder called d2cinsider-ai-bootcamp inside my home folder and use that. If the folder you would use already has files in it, stop and ask me.
+2. Download https://github.com/snehilkhanor/d2cinsider-ai-bootcamp/archive/refs/heads/main.zip and unpack it directly into that folder, so that README.md sits at the top level of the folder and not inside a subfolder. Do not use git and do not install anything.
+3. Check the hidden folder came with it: .claude/skills/ must contain 11 folders and .claude/agents/ must contain 3 files. If not, fix it.
+4. Copy templates/brand-brain to brand-brain inside that folder, keeping every file.
+5. Finish with exactly three lines and nothing else. Line one: the full path of the folder. Line two: "Skills: 11, Agents: 3" if the check passed. Line three: if this chat is already open in that folder, write "Ready. Type /brand-brain and check it appears in the list. Do not press Enter." Otherwise write "Next: click the folder name under the prompt box, choose the folder above, then type /brand-brain and check it appears in the list. Do not press Enter."
+```
+
 **Your first run**
 
 ```
 Read README.md and examples/little-lab/CLAUDE.md, then tell me in five lines what this repo is for and what a finished CLAUDE.md looks like.
 ```
 
-**Copy the brand-brain template**
+**Fill your brand folder**
 
 ```
-Copy the templates/brand-brain folder to the repo root as brand-brain/, keeping every file.
+Open brand-brain/README.md and tell me which file to fill first.
+```
+
+**If it breaks**
+
+```
+Does .claude/skills/brand-brain/SKILL.md exist in the folder this chat is open in? Answer yes or no, and tell me the folder path.
+```
+
+---
+
+## [Practice lab](practice-lab.md)
+
+**Ask about one file**
+
+```
+Read examples/little-lab/sample-inputs/reviews-export.csv and give me a five line summary of what customers are saying. Split it into what is working and what is not.
+```
+
+**Ask across several files**
+
+```
+Some reviews say the Bath and Hair Wash "doesn't lather". Check the other files in examples/little-lab/sample-inputs/ as well. How often does this come up, and what is the customer actually worried about?
+```
+
+**Have it write a file**
+
+```
+Write a one-page summary of Little Lab's top three customer complaints, with one real quote for each, and save it as my-work/practice/complaints.md
+```
+
+**Have it change a file**
+
+```
+In my-work/practice/complaints.md, add a short line under each complaint suggesting what the brand could say on the product page to prevent it.
+```
+
+**Push back**
+
+```
+The second suggestion sounds like marketing. Rewrite it the way a founder would say it to a customer on WhatsApp.
+```
+
+**Clean up**
+
+```
+Delete the folder my-work/practice/
 ```
 
 ---
@@ -51,12 +109,6 @@ Copy examples/little-lab/brand-brain to brand-brain/, keeping every file.
 ---
 
 ## [01 Brand Strategist](session-01-brand-strategist.md)
-
-**Start the session**
-
-```
-/brand-brain
-```
 
 **Check it worked**
 

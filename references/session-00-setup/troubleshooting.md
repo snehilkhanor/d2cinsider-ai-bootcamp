@@ -20,20 +20,20 @@ There are three tabs at the top: **Chat**, **Cowork** and **Code**.
 It does not need admin rights, so an admin prompt means something else is intercepting it. Try downloading again from the official quickstart page rather than a copied link, and check your organisation's device policy is not blocking unsigned installs.
 
 ### The app is slow, or a run stops halfway through
-Look at the usage ring next to the model picker. If you are close to your limit, the fix is to wait for the reset or run sessions at Default scope rather than Power. A run that stops halfway usually shows why in the Tasks pane.
+Type `/usage` to see how much of your plan's allowance is left. If you are close to your limit, the fix is to wait for the reset or run sessions at Default scope rather than Power. A run that stops halfway usually shows why in the Tasks pane.
 
 ---
 
 ## The folder
 
-### Typing `/` shows nothing, or none of the bootcamp teammates
-Three causes, in order of likelihood.
+### `brand-brain` and the other teammates are not in the `/` list
+Two causes.
 
-**1. The folder is not trusted.** The app asks you to trust a folder the first time you open it, and skills in `.claude/skills/` will not load until you do. Re-select the folder and accept the prompt.
+**1. The app is open in a different folder from the one that was set up.** This is the common one. It happens when a folder was chosen by hand before the setup paste ran. Paste: `Does .claude/skills/brand-brain/SKILL.md exist in the folder this chat is open in? Answer yes or no, and tell me the folder path.` If no, click the folder name under the prompt box and choose the folder your setup answer named on its first line.
 
-**2. You opened the wrong folder.** The selected folder must be the one that directly contains `.claude/`. If you opened the parent, or a subfolder, nothing loads. Ask in the prompt: `What folder are you working in, and does it contain a .claude directory?`
+**2. The hidden `.claude` folder is missing.** Finder and Explorer hide folders that start with a dot, so it can go missing without anything looking wrong. It is lost when files are moved or copied after downloading. Paste: `The .claude folder is missing here. Download https://github.com/snehilkhanor/d2cinsider-ai-bootcamp/archive/refs/heads/main.zip and copy its .claude folder into this folder, so that .claude/skills/brand-brain/SKILL.md exists here. Then list the folders inside .claude/skills/.`
 
-**3. The download was incomplete.** If you took the ZIP route, check that `.claude/skills/` exists and has folders inside it. Hidden folders starting with a dot are invisible in Finder by default. Press `Cmd + Shift + .` on Mac to show them.
+The `/` list is long and also shows the app's own commands. Type `/brand-brain` to filter it.
 
 ### The folder is inside iCloud, OneDrive or Dropbox
 Move it. Sync services rewrite files underneath the app while it is working, which produces file-changed errors, reverted edits and work that silently disappears.
@@ -47,17 +47,17 @@ Then select it again in the app.
 ### The ZIP will not download or unzip
 Try a different browser. On Windows, right-click the ZIP and choose **Extract All**, do not just double-click it. Then rename the folder to `d2cinsider-ai-bootcamp` and move it into your home folder.
 
-### Windows: tools fail, or commands appear to do nothing
-**Git for Windows is missing.** Install it from [git-scm.com/download/win](https://git-scm.com/download/win), accept every default, then quit and reopen the app. Mac has what it needs already.
+### Do I need Git on Windows?
+No. The setup paste downloads the folder without it, and this was tested on a Windows laptop with no Git installed. If a later session reports that a command could not run, tell a TA exactly what it said.
 
 ---
 
 ## Permissions
 
 ### It asks permission for every single thing
-Set the permission mode to **Accept edits**. Manual mode asks before every file write and shows a diff, which is right for reviewing somebody else's code and wrong for a session where a teammate writes forty files.
+Set the permission mode to **Auto**, at the bottom right of the window. It is the app's default. Manual mode asks before every file write, which is right for careful review and wrong for a session where a teammate writes forty files.
 
-The four modes are Manual, Accept edits, Plan and Auto. Use Accept edits for the bootcamp.
+The five modes are Auto, Manual, Accept edits, Plan and Bypass permissions. Use Auto for the bootcamp, or Accept edits if you do not see Auto. Never use Bypass permissions.
 
 ### I approved something and want to take it back
 Change the mode back to Manual and it will start asking again. Approvals are per tool, not permanent contracts.

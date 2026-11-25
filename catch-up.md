@@ -10,9 +10,9 @@ The welcome and keynote run from 9:00 to 9:40. That is your window. Session 01 s
 
 ## Situation 1: the app is not installed, or the folder is not open
 
-Do steps 1 to 5 of [`session-00-setup.md`](session-00-setup.md) now. It takes about 15 minutes.
+Do steps 1 to 5 of [`session-00-setup.md`](session-00-setup.md) now. It is one install and one paste, about ten minutes.
 
-You are ready when you type `/` in the Code tab and see a list of teammates.
+You are ready when you type `/brand-brain` in the Code tab and see it in the list.
 
 **If the install will not work at all** (a locked work laptop, no paid Claude plan, a tablet), tell a TA straight away. Do not spend the morning fighting it. You will follow the day on the instructor's screen, and you get the recordings and this folder to run every session at home.
 

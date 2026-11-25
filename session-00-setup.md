@@ -1,10 +1,10 @@
 # Session 0, Setup (pre-work)
 
-**Time:** 30 minutes at home, before bootcamp day. This is mandatory pre-work. The live day starts with a short check, not an install.
+**Time:** 15 minutes at home, before bootcamp day. This is mandatory pre-work. The live day starts with a short check, not an install.
 **Live help:** there is a setup session on Zoom the evening before bootcamp day. Do as much of this as you can beforehand, and bring whatever is stuck. The time is in your email.
 **You need:** a Mac or Windows laptop. A phone, tablet or Chromebook will not work.
 **Primitive:** none yet, this is plumbing
-**You walk out with:** the Claude Code desktop app installed, this repo open inside it, and one successful run
+**You walk out with:** the Claude Code desktop app installed, the bootcamp folder open inside it, and one successful run
 
 ---
 
@@ -24,89 +24,103 @@ Go to the desktop quickstart and download the installer for your machine:
 
 **On Mac:** open the downloaded `.dmg` and drag Claude into Applications. Open it from Applications.
 
-**On Windows:** run the downloaded `.exe`. It does not need admin rights.
+**On Windows:** run the downloaded installer and accept the defaults.
 
-> **Windows only, do this too.** Install **Git for Windows** from [git-scm.com/download/win](https://git-scm.com/download/win). It is a normal installer, you never open it afterwards. Accept every default. Without it some tools in the app fall back to a weaker mode. Mac already has what it needs.
+That is the only thing you install. There is no terminal, and nothing else to download by hand.
 
-## 2. Sign in
+## 2. Sign in and find the Code tab
 
-Open the app. Sign in with the same Anthropic account your Pro or Max plan is on.
+Open the app. Sign in with the account your Pro or Max plan is on.
 
-You will see three tabs at the top: **Chat**, **Cowork** and **Code**.
+At the top of the window there are tabs. **Click Code.** Everything in this bootcamp happens in the Code tab. If you find yourself in Chat, you are in the wrong place and your teammates will not appear.
 
-**Click Code.** Everything in this bootcamp happens in the Code tab. If you find yourself in Chat, you are in the wrong place and skills will not appear.
+**Check where it is running.** The app shows an environment, at the side of the window or under the prompt box. It must say **This computer**. If it offers a cloud or remote environment, do not choose it. Your files have to live on your own laptop.
 
-## 3. Get the bootcamp folder onto your machine
+## 3. Set up the bootcamp folder with one paste
 
-No commands needed. You download a ZIP file and unzip it.
+Copy everything in the box below, paste it into the prompt box, and press Enter.
 
-1. Open **[github.com/snehilkhanor/d2cinsider-ai-bootcamp](https://github.com/snehilkhanor/d2cinsider-ai-bootcamp)** in your browser.
-2. Click the green **Code** button, then **Download ZIP**.
-3. Find the ZIP in your Downloads folder and unzip it. On Mac, double-click it. On Windows, right-click it and choose **Extract All**.
-4. Rename the unzipped folder to exactly `d2cinsider-ai-bootcamp` (GitHub adds `-main` to the end, remove that).
-5. Move the folder into your home folder.
+```
+Set up the D2C Insider AI Bootcamp on this computer.
 
-You end up with a folder at `~/d2cinsider-ai-bootcamp` on Mac, or `C:\Users\you\d2cinsider-ai-bootcamp` on Windows.
+1. Decide where it goes. If this chat is open in a folder of mine and that folder is empty, use that folder. Otherwise create a folder called d2cinsider-ai-bootcamp inside my home folder and use that. If the folder you would use already has files in it, stop and ask me.
+2. Download https://github.com/snehilkhanor/d2cinsider-ai-bootcamp/archive/refs/heads/main.zip and unpack it directly into that folder, so that README.md sits at the top level of the folder and not inside a subfolder. Do not use git and do not install anything.
+3. Check the hidden folder came with it: .claude/skills/ must contain 11 folders and .claude/agents/ must contain 3 files. If not, fix it.
+4. Copy templates/brand-brain to brand-brain inside that folder, keeping every file.
+5. Finish with exactly three lines and nothing else. Line one: the full path of the folder. Line two: "Skills: 11, Agents: 3" if the check passed. Line three: if this chat is already open in that folder, write "Ready. Type /brand-brain and check it appears in the list. Do not press Enter." Otherwise write "Next: click the folder name under the prompt box, choose the folder above, then type /brand-brain and check it appears in the list. Do not press Enter."
+```
 
-> **Do not put it in iCloud Drive, OneDrive or Dropbox.** Sync services rewrite files under the app while it is working. Put it directly in your home folder.
+It takes a minute or two. If the app asks permission to download or create files, say yes. It ends with three lines, like this:
 
-> **Windows: check for a folder inside a folder.** Extract All sometimes creates `d2cinsider-ai-bootcamp-main` with another `d2cinsider-ai-bootcamp-main` inside it. The one you want is the inner one, the one that directly contains `README.md`.
+```
+C:\Users\you\d2cinsider-ai-bootcamp
+Skills: 11, Agents: 3
+Ready. Type /brand-brain and check it appears in the list. Do not press Enter.
+```
 
-## 4. Open the folder in the app
+**If the second line does not say `Skills: 11, Agents: 3`, stop and ask for help.** Do not carry on.
 
-In the **Code** tab, click **Select folder** and choose `d2cinsider-ai-bootcamp`.
+> **Do not make a folder yourself first.** The paste makes it for you. If you have already chosen an empty folder, that is fine, it will use that one.
 
-The app will ask you to trust the folder. Say yes. Trust is what allows the skills in `.claude/skills/` to load, so if you decline, none of your teammates will exist.
+> **Not in iCloud Drive, OneDrive or Dropbox.** If the path on line one contains any of those words, tell a TA. Sync services rewrite files under the app while it is working.
+
+## 4. Open the folder, if it asks you to
+
+Read the third line of the answer.
+
+- **If it says Ready,** you are already in the right folder. Go to step 5.
+- **If it says Next,** click the folder name under the prompt box and choose the folder named on line one. If the app asks whether you trust the folder, say yes.
 
 ## 5. Meet your teammates
 
-Click into the prompt box and type a single forward slash:
+Click into the prompt box and type this, **without pressing Enter**:
 
 ```
-/
+/brand-brain
 ```
 
-A list appears. You should see `brand-brain`, `interview-me`, `market-analyst`, `voice-of-customer`, `ops-manager` and more. **That list is your roster.** Every one of those is a teammate defined in a file inside `.claude/skills/`.
+A list appears with `brand-brain` at the top. Hover over it and its description ends with **(project)**. That label means the teammate comes from your bootcamp folder. Press Escape to close the list.
 
-If the list is empty or has none of those names, jump to troubleshooting at the bottom.
+If you press Enter by mistake, it starts the brand interview. Reply "stop, I will do this on bootcamp day".
 
-Press Escape to close the list without running anything.
+To see everyone, clear the box and type just `/`. The list is long, because it also includes the app's own commands such as `plan`, `usage` and `skills`. Yours are `brand-brain`, `interview-me`, `market-analyst`, `voice-of-customer`, `ops-manager` and the rest. **Those are your roster.**
 
 ## 6. Your first run
 
-Type this into the prompt box and send it:
+Start a new chat. Type this into the prompt box and send it:
 
 ```
 Read README.md and examples/little-lab/CLAUDE.md, then tell me in five lines what this repo is for and what a finished CLAUDE.md looks like.
 ```
 
-Watch what happens. Claude will ask permission to read files, then answer. Two things to notice:
+You do not have to type prompts exactly. Close enough works.
 
-- **The permission card.** Claude asks before it touches anything. You can choose "Allow once" or "Always allow". For reading files inside this folder, "Always allow" is safe and will save you a hundred clicks on bootcamp day.
-- **The file paths in the answer.** Click one. It opens in a file pane inside the app. You never need Finder or Explorer to read your teammates' work.
+Two things to notice:
 
-## 7. Set your permission mode
+- **It read the files itself.** You did not upload or paste anything.
+- **The file paths in the answer are links.** Click one. It opens inside the app. You never need Finder or Explorer to read your teammates' work.
 
-Find the permission mode selector near the prompt box. There are four:
+## 7. Check your permission mode
 
-| Mode | What it does | Use it when |
+At the bottom right of the window, next to the model name, is the mode. **It should already say Auto.** That is the app's default and it is the right one for the bootcamp. If it says something else, click it and choose Auto.
+
+| Mode | What the app says | Use it when |
 |---|---|---|
-| **Manual** | Asks before every edit, shows you a diff | You are nervous, or reviewing someone else's work |
-| **Accept edits** | Auto-approves file edits and safe commands | **Use this for the bootcamp** |
-| **Plan** | Reads and proposes, never edits | You want a plan before any change |
-| **Auto** | Fewer prompts, a safety classifier watches | Later, once you trust the setup |
+| **Auto** | Claude handles permission decisions | **The bootcamp.** It checks each action for risk before running it |
+| **Accept edits** | Automatically accept all file edits | You do not see Auto. You will be asked now and then before it runs a command |
+| **Manual** | Always ask before making changes | You are reviewing something carefully. Too slow for bootcamp day |
+| **Plan** | Create a plan before making changes | You want to see a plan before anything is touched |
+| **Bypass permissions** | Accepts all permissions | **Do not use this.** It removes every safety check |
 
-**Set it to Accept edits** for the bootcamp. Your teammates write a lot of files and approving each one individually will eat your session.
+## 8. Fill your brand folder
 
-## 8. Copy the brand-brain template
-
-In the app prompt, type:
+The paste in step 3 already made a `brand-brain/` folder for you, with empty files to fill. Paste this to open its guide:
 
 ```
-Copy the templates/brand-brain folder to the repo root as brand-brain/, keeping every file.
+Open brand-brain/README.md and tell me which file to fill first.
 ```
 
-Then open `brand-brain/README.md` and start filling the files with your real data. This is the pre-work. Whatever you get done before Session 01 makes every session after it better.
+Then start filling the files with your real data. This is the pre-work that matters. Whatever you get done before Session 01 makes every session after it better.
 
 ---
 
@@ -120,30 +134,36 @@ Then open `brand-brain/README.md` and start filling the files with your real dat
 
 You are ready for Session 01 when all five are true:
 
-- [ ] The app is open on the **Code** tab
-- [ ] The folder `d2cinsider-ai-bootcamp` is selected and trusted
-- [ ] Typing `/` shows at least ten teammate names
+- [ ] The app is open on the **Code** tab, running on **This computer**
+- [ ] The setup paste ended with `Skills: 11, Agents: 3`
+- [ ] Typing `/brand-brain` shows it in the list, marked (project)
 - [ ] Your first run answered and you clicked a file path to read something
-- [ ] A `brand-brain/` folder exists at the repo root
+- [ ] A `brand-brain/` folder exists and you have started filling it
 
 ---
 
 ## If it breaks
 
-**The `/` list is empty, or missing teammates.**
-The folder is not trusted, or you opened the wrong folder. Check the folder path shown in the app is the one containing `.claude/`. Re-select the folder and accept the trust prompt.
+**`brand-brain` is not in the list.**
+The app is open in a different folder from the one that was set up, or the hidden `.claude` folder is missing. You cannot see that folder in Finder or Explorer, so ask. Paste this:
+
+```
+Does .claude/skills/brand-brain/SKILL.md exist in the folder this chat is open in? Answer yes or no, and tell me the folder path.
+```
+
+If no, click the folder name under the prompt box and choose the folder from line one of your setup answer. Also check you are in the Code tab, not Chat.
+
+**The setup paste failed, or stopped halfway.**
+Do it by hand. Open [github.com/snehilkhanor/d2cinsider-ai-bootcamp](https://github.com/snehilkhanor/d2cinsider-ai-bootcamp), click the green **Code** button, then **Download ZIP**. Unzip it, rename the folder to `d2cinsider-ai-bootcamp`, and move the whole folder into your home folder. On Windows, if Extract All made a folder inside a folder, use the inner one, the one that directly contains `README.md`. Choose that folder under the prompt box, then paste: `Copy templates/brand-brain to brand-brain, keeping every file.`
 
 **"Claude Code requires a paid plan".**
-Free tier will not work. Pro is enough for everything in Default scope.
-
-**Windows: tools fail or commands do nothing.**
-Git for Windows is missing. Install it from [git-scm.com/download/win](https://git-scm.com/download/win), then quit and reopen the app.
+The free plan will not work. Pro is enough for everything in Default scope.
 
 **Files keep reverting, or the app says a file changed underneath it.**
-The repo is inside iCloud, OneDrive or Dropbox. Move it to your home folder and re-select it.
+The folder is inside iCloud, OneDrive or Dropbox. Move it to your home folder and choose it again.
 
 **The app is slow or a run stops halfway.**
-Check the usage ring next to the model picker. If you are near your limit, wait for the reset or switch to Default scope for the session.
+Type `/usage` to see how much of your plan's allowance is left. If you are near the limit, wait for the reset.
 
 **Anything else.** [`references/session-00-setup/troubleshooting.md`](references/session-00-setup/troubleshooting.md).
 
